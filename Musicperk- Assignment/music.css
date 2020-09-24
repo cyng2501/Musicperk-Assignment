@@ -1,0 +1,268 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand';
+}
+
+.statbg {
+    width: 100%;
+    padding: 0;
+    background-color: #ff0040;
+    border-radius: 2%;
+}
+
+.defaultwave {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.mobilewave {
+    display: none;
+}
+
+.header {
+    padding: 30px;
+}
+
+.sales {
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 3vw;
+    float: left;
+}
+
+.selection {
+    float: right;
+    position: relative;
+    width: 80px;
+    z-index: 2;
+}
+
+.dropdownbutton {
+    float: right;
+    position: relative;
+    width: 100%;
+    height: 25px;
+    background-color: rgba(224, 224, 224, 0.322);
+    padding: 5px 5px 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.export {
+    color: white;
+    font-weight: bold;
+    font-family: 'Quicksand';
+    position: relative;
+    font-size: 14px;
+    background-color: rgb(163, 162, 162, 0);
+    top: -6px;
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    float: left;
+    margin-top: 3px;
+}
+
+.arrowicon {
+    float: right;
+    position: relative;
+    top: -5px;
+    right: 4px;
+    width: 10px;
+    pointer-events: none;
+    text-align: center;
+}
+
+.icon {
+    width: 10px;
+    height: 10px;
+    margin: auto;
+}
+
+.dropdownoptions {
+    display: block;
+    background-color: rgb(163, 162, 162, 0.25);
+    transition: all 0.5s;
+    top: 100%;
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 2;
+    border-radius: 0 0 5px 5px;
+    font-weight: bold;
+    font-family: 'Quicksand';
+    font-size: 13px;
+}
+
+.dropselect.open .dropdownoptions {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}
+
+.option {
+    display: block;
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    color: rgb(236, 231, 231);
+}
+
+.option:hover {
+    background-color: rgba(224, 224, 224, 0.322);
+    color: white;
+}
+
+.categories-row {
+    position: relative;
+    width: 100%;
+    top: -10px;
+}
+
+.categories {
+    float: left;
+    width: 50%;
+}
+
+.section {
+    height: 175px;
+    border-radius: 10px;
+    padding: 20px 20px;
+}
+
+.icon1 {
+    width: 40px;
+    height: 40px;
+}
+
+.sectionicon {
+    width: 40px;
+    height: auto;
+}
+
+.sectiontitle {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.weeklySales {
+    background-color: #fff0b4;
+    color: #ff7200;
+}
+
+.newUsers {
+    background-color: #c8dfff;
+    color: #0069fb;
+}
+
+.itemOrders {
+    background-color: #fec4c1;
+    color: #f61942;
+}
+
+.bugReports {
+    background-color: #bffbf6;
+    color: #00988b;
+}
+
+@media only screen and (max-width:700px) {
+    .statbg {
+        height: 300px;
+    }
+    .header {
+        margin-top: 20px;
+        padding: 10px 25px;
+    }
+    .defaultwave {
+        display: none;
+    }
+    .mobilewave {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+    }
+    .categories-row {
+        top: -30px;
+    }
+    .section {
+        width: 70%;
+        height: auto;
+        margin: 0 auto 20px;
+        padding: 7% 10% 10%;
+    }
+}
+
+@media only screen and (min-width:700px) {
+    .statbg {
+        height: auto;
+        padding-bottom: 30px;
+    }
+    .header {
+        margin-top: 30px;
+        padding: 10px 40px;
+    }
+    .sales {
+        font-size: 2.5vw;
+    }
+    .selection {
+        width: 120px;
+    }
+    .dropdownbutton {
+        width: 100%;
+        height: 30px;
+        padding: 5px 10px 5px 15px;
+    }
+    .export {
+        font-size: 18px;
+    }
+    .arrowicon {
+        width: 20px;
+        top: 1px;
+        right: 4px;
+    }
+    .icon {
+        width: 20px;
+        height: 20px;
+    }
+    .dropdownoptions {
+        font-size: 18px;
+    }
+    .defaultwave {
+        position: relative;
+    }
+    .categories-row {
+        top: -25px;
+    }
+    .section {
+        width: 70%;
+        padding: 7% 10% 10%;
+        margin: 0 auto 20px;
+        height: auto;
+    }
+    .icon1 {
+        width: 25%;
+    }
+    .sectionicon {
+        width: 100%;
+        height: auto;
+    }
+    .sectiontitle {
+        font-size: 2vw;
+    }
+}
+
+@media only screen and (max-width:364px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}
